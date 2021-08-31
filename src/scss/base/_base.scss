@@ -1,0 +1,25 @@
+// @use 'abstract/types';
+@use '../abstracts' as *;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// Based on broswers default 16px font size to 10px for 1 rem unit.
+	// 16(px)/10 = .625 = 62.5%
+	font-size: 62.5%;
+}
+
+body {
+	// font-family: $main-font;
+	font-weight: 500;
+	font-size: 1.4rem;
+	font-family: $primary-font;
+	box-sizing: border-box;
+	background: $light-grayish-blue;
+}

@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.card-grid {
+	max-width: 111rem;
+	margin: 2rem 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 2.5rem;
+}
+
+// tablet layout
+@include md-breakpoint;
+
+// smart phone layout
+@include sm-breakpoint;

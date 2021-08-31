@@ -1,0 +1,94 @@
+@use "../abstracts/" as *;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	padding: 3rem;
+	color: $light-grayish-blue;
+	border-radius: 1rem;
+	box-shadow: 1rem 0.6rem 1.5rem hsl(0, 0%, 85%);
+	transition: all 150ms ease-in-out;
+
+	&__1 {
+		background-color: $moderate-violet;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	&__2 {
+		background-color: $very-dark-grayish-blue;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	&__3 {
+		background-color: $white;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	&__4 {
+		background-color: $very-dark-blackish-blue;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	&__5 {
+		background-color: $white;
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	&__profile-container {
+		display: flex;
+		margin-bottom: 2rem;
+
+		img {
+			border-radius: 50%;
+			border: 0.2rem solid $light-grayish-blue;
+			margin-right: 1.5rem;
+			width: 3rem;
+			height: auto;
+		}
+	}
+
+	&__title {
+		color: $light-grayish-blue-text;
+
+		&--dark {
+			color: $very-dark-grayish-blue-text;
+		}
+	}
+
+	&__testimonial {
+		font-size: 1.8rem;
+		font-weight: 600;
+		margin-bottom: 2rem;
+
+		&--dark {
+			color: $very-dark-grayish-blue;
+		}
+	}
+
+	&__sub-testimonial {
+		&--dark {
+			color: $light-grayish-blue-text;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: 1rem 0.6rem 2rem hsl(0, 0%, 90%);
+	}
+}
+
+@include md-breakpoint;
+@include sm-breakpoint;
