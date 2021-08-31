@@ -13,10 +13,18 @@
 
 	&__1 {
 		background-color: $moderate-violet;
+		position: relative;
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row-start: 1;
 		grid-row-end: 2;
+
+		.quote {
+			position: absolute;
+			top: -0.05rem;
+			right: 10rem;
+			z-index: 1;
+		}
 	}
 	&__2 {
 		background-color: $very-dark-grayish-blue;
@@ -50,6 +58,7 @@
 	&__profile-container {
 		display: flex;
 		margin-bottom: 2rem;
+		z-index: 11;
 
 		img {
 			border-radius: 50%;
@@ -72,6 +81,7 @@
 		font-size: 1.8rem;
 		font-weight: 600;
 		margin-bottom: 2rem;
+		z-index: 10;
 
 		&--dark {
 			color: $very-dark-grayish-blue;

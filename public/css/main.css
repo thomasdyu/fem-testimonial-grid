@@ -133,10 +133,17 @@ body {
 }
 .card__1 {
   background-color: #7541c8;
+  position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+.card__1 .quote {
+  position: absolute;
+  top: -0.05rem;
+  right: 10rem;
+  z-index: 1;
 }
 .card__2 {
   background-color: #48556a;
@@ -169,6 +176,7 @@ body {
 .card__profile-container {
   display: flex;
   margin-bottom: 2rem;
+  z-index: 11;
 }
 .card__profile-container img {
   border-radius: 50%;
@@ -187,6 +195,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  z-index: 10;
 }
 .card__testimonial--dark {
   color: #48556a;
